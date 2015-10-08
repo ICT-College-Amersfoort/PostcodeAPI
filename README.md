@@ -2,7 +2,10 @@
 Postcode API, een lichtgewicht jQuery Plugin om de webservice postcodeapi.nu te integreren via jQuery (http://api.postcodeapi.nu/docs/)
 Er is een probleem met het checken van de postcode in combinatie met het huisnummer. Volgens de voorbeelden moet dat mogelijk zijn, op http://boye.e-sites.nl/papi/ werkt dit ook.
 Zodra ik dit in een eigen omgeving probeer, lukt het niet om een verkeerd huisnummer bij een postcode GEEN output te laten genereren! Met andere woorden, de straatnaam en adres worden gewoon ingevuld.
+API-key
+$.papi.setApiKey('6de2aea42f39b53d9d187c3c3d9208fdd4044cc1');
 
+Call:
 $('#housenr').papi({
     source: $('#zipcode4')[0],
     event: 'change',
